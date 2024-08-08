@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.book-list {
+    margin: 20px 0;
+}
+.book-card {
+    margin: 10px 0; /* Ajustado para pantallas pequeñas */
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.search-form {
+    margin: 20px 0;
+}
+.featured-book {
+    margin: 20px 0;
+}

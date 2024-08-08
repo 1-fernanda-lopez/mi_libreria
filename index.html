@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros - Carrusel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center my-4">Bienvenido a la Biblioteca Virtual de Fernanda</h1>
+
+    <div id="bookCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/BC_Michigan_06182023_4207_3x2.avif" alt="Libro 1">
+                <div class="carousel-caption">
+                    <h5>El reencuentro</h5>
+                    <p>En un estado de EE.UU (Michigan) se encuentra una hermosa mujer llamda Eliza quien esta por conocer al amor de su vida pero esto no terminara tan bien...</p>
+                    <p>Es un libro que aun se continua escribiendo</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/pelicula-silencio-en-el-paraiso_2.jpg" alt="Libro 2">
+                <div class="carousel-caption">
+                    <h5>Una verdad en colombia</h5>
+                    <p>Es un breve relato sobre falsos positivos donde se toma por inspiracion la pelicula  "silencio en el paraiso"  del director Colbert Garcia, donde se habla de la historia de juan pablo un falso positivo que no tenia la culpa de lo sucedido</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/david-arbus.jpg" alt="Libro 3">
+                <div class="carousel-caption">
+                    <h5>¿Qué podia pasar?</h5>
+                    <p>Es un breve relato sobre el amor no correspondido y aun asi vivido entre las mentiras de un hombre y la ilusion de un camino... </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#bookCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#bookCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <div class="search-form">
+        <h2 class="text-center my-4">Busca tu próximo libro o relato</h2>
+        <form class="form-inline justify-content-center">
+            <input class="form-control mr-2" type="search" placeholder="Título, autor o tema" aria-label="Buscar">
+            <button class="btn btn-primary " type="submit">Buscar</button>
+        </form>
+    </div>
+
+    <div class="book-list">
+        <h2 class="text-center my-4">libro o relatos recomendados</h2>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 book-card">
+                <div class="card">
+                    <img src="img/BC_Michigan_06182023_4207_3x2.avif" class="card-img-top" alt="Libro Recomendado 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Libro Recomendado "El reencuentro"</h5>
+                        <p class="card-text"> En un estado de EE.UU (Michigan) se encuentra una hermosa mujer llamda Eliza quien esta por conocer al amor de su vida pero esto no terminara tan bien...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 book-card">
+                <div class="card">
+                    <img src="img/como_escribir_una_carta_de_amor_50504_orig.jpg" class="card-img-top" alt="Libro Recomendado 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Relato Recomendado "Una carta de despedida"</h5>
+                        <p class="card-text">¿Vivir en costante miedo que la persona que amas no va a estar o dar tu vida por esa persona aunque tu no estes?
+                            "Mi corazón es tuyo y mi vida tambien"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 book-card">
+                <div class="card">
+                    <img src="img/PQgentebuenanew-450x321.jpg" class="card-img-top" alt="Libro Recomendado 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Libro Recomendado 
+                            Por Qué le Pasan Cosas Malas a la Gente Buena?
+                            </h5>
+                        <p class="card-text">Libro de Iván Gutiérrez Rodríguez</p>
+                        <p class="card-text"> Muchas personas que creemos no hacerle daño a los demás, que luchamos en busca de muchos propósitos, hacemos buenas obras y además oramos, no logramos los objetivos y, lo que es peor, a veces nos estancamos y perdemos la esperanza. Existen momentos en nuestra vida en los que sentimos que algo nos hace falta. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-book">
+        <h2 class="text-center my-4">Libro Destacado</h2>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="img/BC_Michigan_06182023_4207_3x2.avif" alt="Libro Destacado" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6">
+                <h3>El reencuentro</h3>
+                <p>Maria Fernanda Giraldo López</p>
+                <p>En un estado de EE.UU (Michigan) se encuentra una hermosa mujer llamda Eliza quien esta por conocer al amor de su vida pero esto no terminara tan bien...</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="contact">
+    <div class="container mb-3 mb-lg-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="secction-header text-center pb-2 pb-lg-5 ">
+                    <h2> Contactos</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, nisi.<br> Fugit quo magni iste odit porro maiores in fuga qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="col-12 col-md-12 col-lg-6 p-o pt-4 pb-4">
+                <form action="#" class="bg-lihgt p-1 m-auto shadow-sm">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input  class="form-control" placeholder="Nombre"  type="text"  required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input  class="form-control" placeholder="Email"  type="email"  required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                               <textarea class="from-control" placeholder="Mensaje" rows="3" required></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block mt-3">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Fernanda. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
